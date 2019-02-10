@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "magicalloy:blocks/copper_ore"
+  }
+}

@@ -1,0 +1,12 @@
+[{
+  "modid": "magicalloy",
+  "name": "Magic Alloy",
+  "description": "A small mod for me to learn Forge modding. It adds copper and tin and lets you create bronze and mithril.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "logoFile": "assets/magicalloy/textures/logo.png",
+  "url": "codedstingray.net/",
+  "updateJSON": "",
+  "authorList": ["CodedStingray"],
+  "credits": "My PC for allowing me to program on it."
+}]
