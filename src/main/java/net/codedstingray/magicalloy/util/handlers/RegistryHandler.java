@@ -3,6 +3,7 @@ package net.codedstingray.magicalloy.util.handlers;
 import net.codedstingray.magicalloy.MagicAlloy;
 import net.codedstingray.magicalloy.init.ModBlocks;
 import net.codedstingray.magicalloy.init.ModItems;
+import net.codedstingray.magicalloy.util.ICustomModelRegister;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -26,11 +27,17 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onModelRegister(ModelRegistryEvent event) {
         for(Item item: ModItems.ITEMS) {
-            MagicAlloy.proxy.registerItemRenderer(item, 0, "inventory");
+            if(item instanceof ICustomModelRegister)
+                ((ICustomModelRegister) item).registerModels();
+            else
+                MagicAlloy.proxy.registerItemRenderer(item, 0, "inventory");
         }
 
         for(Block block: ModBlocks.BLOCKS) {
-            MagicAlloy.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
+            if(block instanceof ICustomModelRegister)
+                ((ICustomModelRegister) block).registerModels();
+            else
+                MagicAlloy.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
         }
     }
 }
