@@ -4,6 +4,14 @@
 
 #Copper
 tile.copper_ore.name=Copper Ore
+tile.copper_block.name=Copper Block
+
+#Tin
+tile.tin_ore.name=Tin Ore
+tile.tin_block.name=Tin Block
+
+#Bronze
+tile.bronze_block.name=Bronze Block
 
 
 #########

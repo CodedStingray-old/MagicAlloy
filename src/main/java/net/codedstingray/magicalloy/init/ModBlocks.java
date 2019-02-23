@@ -13,6 +13,12 @@ public class ModBlocks {
     public static final List<Block> BLOCKS = new LinkedList<>();
 
     public static final Block COPPER_ORE = registerBlock(new Block(Material.ROCK), "copper_ore", CreativeTabs.BUILDING_BLOCKS);
+    public static final Block COPPER_BLOCK = registerBlock(new Block(Material.IRON), "copper_block", CreativeTabs.BUILDING_BLOCKS);
+
+    public static final Block TIN_ORE = registerBlock(new Block(Material.ROCK), "tin_ore", CreativeTabs.BUILDING_BLOCKS);
+    public static final Block TIN_BLOCK = registerBlock(new Block(Material.IRON), "tin_block", CreativeTabs.BUILDING_BLOCKS);
+
+    public static final Block BRONZE_BLOCK = registerBlock(new Block(Material.IRON), "bronze_block", CreativeTabs.BUILDING_BLOCKS);
 
     private static <B extends Block> B registerBlock(B block, String name, CreativeTabs creativeTab) {
         block.setUnlocalizedName(name).setRegistryName(name).setCreativeTab(creativeTab);
