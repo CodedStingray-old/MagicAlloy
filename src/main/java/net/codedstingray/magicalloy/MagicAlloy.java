@@ -1,5 +1,6 @@
 package net.codedstingray.magicalloy;
 
+import net.codedstingray.magicalloy.init.ModRecipes;
 import net.codedstingray.magicalloy.proxy.CommonProxy;
 import net.codedstingray.magicalloy.util.Reference;
 import net.minecraftforge.fml.common.Mod;
@@ -34,6 +35,7 @@ public class MagicAlloy {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         logger.info("initialization started");
+        ModRecipes.init();
     }
 
     @Mod.EventHandler
