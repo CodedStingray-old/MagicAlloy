@@ -3,11 +3,13 @@ package net.codedstingray.magicalloy;
 import net.codedstingray.magicalloy.init.ModRecipes;
 import net.codedstingray.magicalloy.proxy.CommonProxy;
 import net.codedstingray.magicalloy.util.Reference;
+import net.codedstingray.magicalloy.world.OreGen;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 
 @Mod(
@@ -30,6 +32,8 @@ public class MagicAlloy {
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         logger.info("pre-initialization started");
+
+        GameRegistry.registerWorldGenerator(new OreGen(), 3);
     }
 
     @Mod.EventHandler
