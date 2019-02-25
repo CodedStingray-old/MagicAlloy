@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "I I",
+    "I I"
+  ],
+
+  "key":
+  {
+    "I":
+    {
+      "item": "magicalloy:bronze_ingot"
+    }
+  },
+
+  "result":
+  {
+    "item": "magicalloy:bronze_boots",
+    "count": 1
+  }
+}

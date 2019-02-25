@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "magicalloy:bronze_ingot"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "magicalloy:bronze_nugget",
+    "count": 9
+  }
+}

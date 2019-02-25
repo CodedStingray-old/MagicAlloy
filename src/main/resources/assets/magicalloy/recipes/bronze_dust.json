@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "magicalloy:copper_dust"
+    },
+
+    {
+      "item": "magicalloy:copper_dust"
+    },
+
+    {
+      "item": "magicalloy:copper_dust"
+    },
+
+    {
+      "item": "magicalloy:tin_dust"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "magicalloy:bronze_dust",
+    "count": 4
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "III",
+    "III",
+    "III"
+  ],
+
+  "key":
+  {
+    "I":
+    {
+      "item": "magicalloy:tin_ingot"
+    }
+  },
+
+  "result":
+  {
+    "item": "magicalloy:tin_block",
+    "count": 1
+  }
+}
