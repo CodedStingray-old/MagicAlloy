@@ -1,0 +1,11 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "up": "magicalloy:blocks/alloy_furnace_top",
+    "down": "magicalloy:blocks/alloy_furnace_top",
+    "north": "magicalloy:blocks/alloy_furnace_front",
+    "east": "magicalloy:blocks/alloy_furnace_side",
+    "south": "magicalloy:blocks/alloy_furnace_side",
+    "west": "magicalloy:blocks/alloy_furnace_side"
+  }
+}
